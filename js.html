@@ -268,60 +268,6 @@ a=<input type="text" value="0" id="a_znach">
 </body> 
 </html>
 
-2.25-2.33
-
-<title>Стили</title> 
-<style>
-p3 {font-size: 3em; text-shadow:4px 4px 5px #AAAAAA; color:#000;}
-</style>
-</head> 
-
-</ul> 
-</nav> 
-<script> 
-function func(){ 
-n=document.getElementById("a_znach").value; 
-y=n 
-x=n%10 
-a=(n-x)/10 
-n=100*x+a 
-document.getElementById("a").innerHTML ="<p3>"+"2.25= "+ n+"</p3>"; 
-x=(y-y%100)/100 
-a=y%100 
-n=10*a+x 
-document.getElementById("b").innerHTML ="<p3>"+"2.27= "+ n+"</p3>"; 
-x=((y-y%100)/10+y%10) 
-n=10*x+(y%100-y%10)/10 
-document.getElementById("v").innerHTML ="<p3>"+"2.29= "+ n+"</p3>"; 
-x=((y-y%100)/10+y%10) 
-n=(y%100-y%10)*10+x 
-document.getElementById("g").innerHTML ="<p3>"+"2.31= "+ n+"</p3>"; 
-x=y%10 
-a=(y%100-x)+(y-y%100)/100 
-n=100*x+a 
-document.getElementById("d").innerHTML ="<p3>"+"2.33= "+ n+"</p3>"; 
-} 
-</script> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-<br> 
-n=<input type="text" value="0" id="a_znach"> 
-<br> 
-<br> 
-<button onclick="func()">кнопка</button> 
-<br> 
-<br> 
-<div id="a"></div> 
-<div id="b"></div> 
-<div id="v"></div> 
-<div id="g"></div> 
-<div id="d"></div> 
-
-</body> 
-</html>
 
 
 
