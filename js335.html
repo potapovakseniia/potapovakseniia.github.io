@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>js335</title>
+</head>
+<body>
+&lt;!doctype html&gt; <br>
+&lt;html&gt; <br>
+&lt;head&gt; <br>
+&lt;title&gt;canvasExample&lt;/title&gt; <br>
+&lt;meta charset='utf-8' /&gt; <br>
+&lt;style&gt; <br>
+a.button.purple { <br>
+background: #e8c4e4; <br>
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0)); <br>
+background: -moz-linear-gradient(#e8c4e4, #d698d0); <br>
+background: linear-gradient(#e8c4e4, #d698d0); <br>
+border: solid 1px #da9fd4; <br>
+border-bottom: solid 3px #946890; <br>
+box-shadow: inset 0 0 0 1px #f2dcef; <br>
+color: #7b5777; <br>
+text-shadow: 0 1px 0 #eacae6; } <br>
+a.button.purple:hover { <br>
+background: #daa2d4; <br>
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); <br>
+background: -moz-linear-gradient(#daa2d4, #e0b1db); <br>
+background: linear-gradient(#daa2d4, #e0b1db); <br>
+border: solid 1px #ca91c4; <br>
+border-bottom: solid 3px #946890; <br>
+box-shadow: inset 0 0 0 1px #e9c7e6; } <br>
+a.button.purple:active { <br>
+background: #d49ace; <br>
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); <br>
+background: -moz-linear-gradient(#d49ace, #cc94c6); <br>
+background: linear-gradient(#d49ace, #cc94c6); <br>
+border: solid 1px #8e678a; <br>
+box-shadow: inset 0 10px 15px 0 #ba87b5; } <br>
+&lt;/style&gt; <br>
+&lt;script&gt; <br>
+function clean(){ <br>
+var canvas = document.getElementById('example'); <br>
+var ctx = canvas.getContext('2d'); <br>
+ctx.fillStyle = "white"; <br>
+ctx.fillRect(0, 0, 640, 480); <br>
+ctx.closePath(); <br>
+} <br>
+function er1(){ <br>
+var canvas = document.getElementById('example'); <br>
+var ctx = canvas.getContext('2d'); <br>
+ctx.beginPath(); <br>
+drawpoint(); <br>
+<br>
+<br>
+ctx.moveTo(240, 0); <br>
+ctx.lineTo(240, 320); <br>
+ctx.moveTo(0, 160); <br>
+ctx.lineTo(480, 160);<br>
+ctx.arc(240, 160, 100, 0, 2 * Math.PI);<br>
+ctx.moveTo(450, 0); <br>
+ctx.lineTo(0, 450); <br>
+ctx.stroke();<br>
+x=Number(document.getElementById("x_znach").value); <br>
+y=Number(document.getElementById("y_znach").value); <br>
+if (x*x+y*y&gt;5 &amp;&amp; x&gt;=5 &amp;&amp; y&lt;=-5 || x&lt;=0 ) { <br>
+alert( '&#1058;&#1086;&#1095;&#1082;&#1072; &#1074; &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1080;' ); <br>
+} else { <br>
+alert( '&#1058;&#1086;&#1095;&#1082;&#1072; &#1085;&#1077; &#1074; &#1086;&#1073;&#1083;&#1072;&#1089;&#1090;&#1080;' ); <br>
+} <br>
+} <br>
+<br>
+function drawpoint() { <br>
+x=Number(document.getElementById("x_znach").value); <br>
+y=Number(document.getElementById("y_znach").value); <br>
+x=240+x*10; <br>
+y=160-y*10; <br>
+var canvas = document.getElementById('example'); <br>
+var ctx = canvas.getContext('2d'); <br>
+ctx.beginPath(); <br>
+ctx.strokeStyle = 'green'; <br>
+ctx.arc(x, y, 2, 0, 2 * Math.PI); <br>
+ctx.stroke(); <br>
+} <br>
+&lt;/script&gt; <br>
+&lt;/head&gt; <br>
+&lt;body&gt; <br>
+x=&lt;input type="text" value="0" id="x_znach"&gt; <br>
+y=&lt;input type="text" value="0" id="y_znach"&gt; <br>
+&lt;a href="#" onclick="clean()" class="button purple"&gt;&#1054;&#1095;&#1080;&#1089;&#1090;&#1080;&#1090;&#1100;&lt;/a&gt; <br>
+&lt;a href="#" onclick="er1()" class="button purple"&gt;&#1082;&#1085;&#1086;&#1087;&#1082;&#1077;&lt;/a&gt; <br>
+<br>
+&lt;br&gt; <br>
+&lt;canvas width='480' height='320' id='example'&gt;&#1054;&#1073;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1073;&#1088;&#1072;&#1091;&#1079;&#1077;&#1088;&lt;/canvas&gt; <br>
+&lt;br&gt; <br>
+&lt;/body&gt; <br>
+&lt;/html&gt;
+</body>
+</html>
