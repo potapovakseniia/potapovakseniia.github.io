@@ -1,111 +1,100 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>js416</title>
-</head>
-<body>
-<div style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 254); font-family: Consolas,'Courier New',monospace; font-weight: normal; font-size: 13px; line-height: 18px; white-space: pre;">
-<div><span style="color: rgb(128, 128, 128);">&lt;!doctype</span><span style="color: rgb(255, 0, 0);"> html</span><span style="color: rgb(128, 128, 128);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">html</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">head</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">title</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);">canvasExample</span><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">title</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">meta</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">charset</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">'utf-8'</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(56, 56, 56);">/&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">style</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(128, 0, 0);">a.button.purple</span><span style="color: rgb(0, 0, 0);"> { </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#e8c4e4</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-webkit-gradient(linear</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">bottom</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">from(#e8c4e4)</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">to(#d698d0))</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-moz-linear-gradient(#e8c4e4</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#d698d0)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">linear-gradient(#e8c4e4</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#d698d0)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">border:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">solid</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#da9fd4</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">border-bottom:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">solid</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">3px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#946890</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">box-shadow:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">inset</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#f2dcef</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">color:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#7b5777</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">text-shadow:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#eacae6</span><span style="color: rgb(0, 0, 0);">; } </span></div>
-<div><span style="color: rgb(128, 0, 0);">a.button.purple:hover</span><span style="color: rgb(0, 0, 0);"> { </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#daa2d4</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-webkit-gradient(linear</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">bottom</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">from(#daa2d4)</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">to(#e0b1db))</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-moz-linear-gradient(#daa2d4</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#e0b1db)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">linear-gradient(#daa2d4</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#e0b1db)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">border:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">solid</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#ca91c4</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">border-bottom:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">solid</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">3px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#946890</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">box-shadow:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">inset</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#e9c7e6</span><span style="color: rgb(0, 0, 0);">; } </span></div>
-<div><span style="color: rgb(128, 0, 0);">a.button.purple:active</span><span style="color: rgb(0, 0, 0);"> { </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#d49ace</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-webkit-gradient(linear</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">bottom</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">from(#d49ace)</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">to(#cc94c6))</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">-moz-linear-gradient(#d49ace</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#cc94c6)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">background:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">linear-gradient(#d49ace</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(4, 81, 165);">#cc94c6)</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">border:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">solid</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">1px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#8e678a</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(255, 0, 0);">box-shadow:</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">inset</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">10px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">15px</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(4, 81, 165);">#ba87b5</span><span style="color: rgb(0, 0, 0);">; } </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">style</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">script</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(0, 0, 255);">function</span><span style="color: rgb(0, 0, 0);"> clean(){ </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> canvas = document.getElementById(</span><span style="color: rgb(163, 21, 21);">'example'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> ctx = canvas.getContext(</span><span style="color: rgb(163, 21, 21);">'2d'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.fillStyle = </span><span style="color: rgb(163, 21, 21);">"white"</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.fillRect(</span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">480</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">320</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.closePath(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(0, 0, 255);">function</span><span style="color: rgb(0, 0, 0);"> er1(){ </span></div>
-<div><span style="color: rgb(0, 0, 0);">clean(); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> canvas = document.getElementById(</span><span style="color: rgb(163, 21, 21);">'example'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> ctx = canvas.getContext(</span><span style="color: rgb(163, 21, 21);">'2d'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.beginPath(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">drawpoint1(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">drawpoint2(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.stroke(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">x=</span><span style="color: rgb(0, 128, 128);">Number</span><span style="color: rgb(0, 0, 0);">(document.getElementById(</span><span style="color: rgb(163, 21, 21);">"x_znach"</span><span style="color: rgb(0, 0, 0);">).value); </span></div>
-<div><span style="color: rgb(0, 0, 0);">y=</span><span style="color: rgb(0, 128, 128);">Number</span><span style="color: rgb(0, 0, 0);">(document.getElementById(</span><span style="color: rgb(163, 21, 21);">"y_znach"</span><span style="color: rgb(0, 0, 0);">).value); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> b=</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.sqrt(x); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(0, 128, 128);">R</span><span style="color: rgb(0, 0, 0);">=</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.sqrt(y/</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.</span><span style="color: rgb(0, 128, 128);">PI</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(0, 128, 128);">D</span><span style="color: rgb(0, 0, 0);">=</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.sqrt(</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">*b*b); </span></div>
-<div><span style="color: rgb(0, 0, 255);">if</span><span style="color: rgb(0, 0, 0);"> (</span><span style="color: rgb(0, 128, 128);">R</span><span style="color: rgb(0, 0, 0);">&lt;b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">) { </span></div>
-<div><span style="color: rgb(0, 0, 0);">alert( </span><span style="color: rgb(163, 21, 21);">'&#1082;&#1088;&#1091;&#1075; &#1091;&#1084;&#1077;&#1097;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074; &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090;&#1077;'</span><span style="color: rgb(0, 0, 0);"> ); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span><span style="color: rgb(0, 0, 255);">else</span><span style="color: rgb(0, 0, 0);"> { </span></div>
-<div><span style="color: rgb(0, 0, 255);">if</span><span style="color: rgb(0, 0, 0);"> (</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">*</span><span style="color: rgb(0, 128, 128);">R</span><span style="color: rgb(0, 0, 0);">&gt;</span><span style="color: rgb(0, 128, 128);">D</span><span style="color: rgb(0, 0, 0);">) { </span></div>
-<div><span style="color: rgb(0, 0, 0);">alert( </span><span style="color: rgb(163, 21, 21);">'&#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090; &#1091;&#1084;&#1077;&#1097;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074; &#1082;&#1088;&#1091;&#1075;&#1077;'</span><span style="color: rgb(0, 0, 0);"> ); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span><span style="color: rgb(0, 0, 255);">else</span><span style="color: rgb(0, 0, 0);"> { </span></div>
-<div><span style="color: rgb(0, 0, 0);">alert( </span><span style="color: rgb(163, 21, 21);">'&#1087;&#1077;&#1088;&#1077;&#1089;&#1077;&#1095;&#1077;&#1085;&#1080;&#1077;'</span><span style="color: rgb(0, 0, 0);"> ); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(0, 0, 255);">function</span><span style="color: rgb(0, 0, 0);"> drawpoint1() { </span></div>
-<div><span style="color: rgb(0, 0, 0);">x=</span><span style="color: rgb(0, 128, 128);">Number</span><span style="color: rgb(0, 0, 0);">(document.getElementById(</span><span style="color: rgb(163, 21, 21);">"x_znach"</span><span style="color: rgb(0, 0, 0);">).value); </span></div>
-<div><span style="color: rgb(0, 0, 0);">x=</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">+x*</span><span style="color: rgb(9, 136, 90);">100</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> b=</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.sqrt(x); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> canvas = document.getElementById(</span><span style="color: rgb(163, 21, 21);">'example'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> ctx = canvas.getContext(</span><span style="color: rgb(163, 21, 21);">'2d'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.beginPath(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.strokeStyle = </span><span style="color: rgb(163, 21, 21);">'green'</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.moveTo(</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">-b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">-b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.lineTo(</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">+b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">-b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.lineTo(</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">+b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">+b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.lineTo(</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">-b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">+b/</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.closePath(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.stroke(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(0, 0, 255);">function</span><span style="color: rgb(0, 0, 0);"> drawpoint2() { </span></div>
-<div><span style="color: rgb(0, 0, 0);">y=</span><span style="color: rgb(0, 128, 128);">Number</span><span style="color: rgb(0, 0, 0);">(document.getElementById(</span><span style="color: rgb(163, 21, 21);">"y_znach"</span><span style="color: rgb(0, 0, 0);">).value); </span></div>
-<div><span style="color: rgb(0, 0, 0);">y=</span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">+y*</span><span style="color: rgb(9, 136, 90);">100</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> canvas = document.getElementById(</span><span style="color: rgb(163, 21, 21);">'example'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 255);">var</span><span style="color: rgb(0, 0, 0);"> ctx = canvas.getContext(</span><span style="color: rgb(163, 21, 21);">'2d'</span><span style="color: rgb(0, 0, 0);">); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.beginPath(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.strokeStyle = </span><span style="color: rgb(163, 21, 21);">'green'</span><span style="color: rgb(0, 0, 0);">; </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.arc(</span><span style="color: rgb(9, 136, 90);">240</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(9, 136, 90);">160</span><span style="color: rgb(0, 0, 0);">, </span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.sqrt(y/</span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.</span><span style="color: rgb(0, 128, 128);">PI</span><span style="color: rgb(0, 0, 0);">), </span><span style="color: rgb(9, 136, 90);">0</span><span style="color: rgb(0, 0, 0);"> ,</span><span style="color: rgb(9, 136, 90);">2</span><span style="color: rgb(0, 0, 0);"> * </span><span style="color: rgb(0, 128, 128);">Math</span><span style="color: rgb(0, 0, 0);">.</span><span style="color: rgb(0, 128, 128);">PI</span><span style="color: rgb(0, 0, 0);">) </span></div>
-<div><span style="color: rgb(0, 0, 0);">ctx.stroke(); </span></div>
-<div><span style="color: rgb(0, 0, 0);">} </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">script</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">head</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">body</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(0, 0, 0);">&#1087;&#1083;&#1086;&#1097;&#1072;&#1076;&#1073; &#1082;&#1074;&#1072;&#1076;&#1088;&#1072;&#1090;&#1072;=</span><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">input</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">type</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"text"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">value</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"0"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">id</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"x_znach"</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(0, 0, 0);">&#1087;&#1083;&#1086;&#1097;&#1072;&#1076;&#1073; &#1082;&#1088;&#1091;&#1075;&#1072;=</span><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">input</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">type</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"text"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">value</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"0"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">id</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"y_znach"</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">a</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">href</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"#"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">onclick</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"clean()"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">class</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"button purple"</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);">&#1086;&#1095;&#1080;&#1089;&#1090;&#1080;&#1090;&#1100;</span><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">a</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">a</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">href</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"#"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">onclick</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"er1()"</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">class</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">"button purple"</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);">&#1082;&#1085;&#1086;&#1087;&#1091;&#1096;&#1082;&#1072;</span><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">a</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<br>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">canvas</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">width</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">'480'</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">height</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">'320'</span><span style="color: rgb(0, 0, 0);"> </span><span style="color: rgb(255, 0, 0);">id</span><span style="color: rgb(56, 56, 56);">=</span><span style="color: rgb(0, 0, 255);">'example'</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);">&#1054;&#1073;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1073;&#1088;&#1072;&#1091;&#1079;&#1077;&#1088;</span><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">canvas</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;</span><span style="color: rgb(128, 0, 0);">br</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">body</span><span style="color: rgb(56, 56, 56);">&gt;</span><span style="color: rgb(0, 0, 0);"> </span></div>
-<div><span style="color: rgb(56, 56, 56);">&lt;/</span><span style="color: rgb(128, 0, 0);">html</span><span style="color: rgb(56, 56, 56);">&gt;</span></div>
-</div>
-</body>
+<!doctype html> 
+<html> 
+<head> 
+<title>canvasExample</title> 
+<meta charset='utf-8' /> 
+<style> 
+a.button.purple { 
+background: #e8c4e4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0)); 
+background: -moz-linear-gradient(#e8c4e4, #d698d0); 
+background: linear-gradient(#e8c4e4, #d698d0); 
+border: solid 1px #da9fd4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #f2dcef; 
+color: #7b5777; 
+text-shadow: 0 1px 0 #eacae6; } 
+a.button.purple:hover { 
+background: #daa2d4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); 
+background: -moz-linear-gradient(#daa2d4, #e0b1db); 
+background: linear-gradient(#daa2d4, #e0b1db); 
+border: solid 1px #ca91c4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #e9c7e6; } 
+a.button.purple:active { 
+background: #d49ace; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); 
+background: -moz-linear-gradient(#d49ace, #cc94c6); 
+background: linear-gradient(#d49ace, #cc94c6); 
+border: solid 1px #8e678a; 
+box-shadow: inset 0 10px 15px 0 #ba87b5; } 
+</style> 
+<script> 
+function clean(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.fillStyle = "grey"; 
+ctx.fillRect(0, 0, 480, 320); 
+ctx.closePath(); 
+} 
+function er1(){ 
+clean(); 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+drawpoint1(); 
+drawpoint2(); 
+ctx.stroke(); 
+x=Number(document.getElementById("x_znach").value); 
+y=Number(document.getElementById("y_znach").value); 
+var b=Math.sqrt(x); 
+var R=Math.sqrt(y/Math.PI); 
+var D=Math.sqrt(2*b*b); 
+if (R<b/2) { 
+alert( 'круг в квадрате' ); 
+} else { 
+if (2*R>D) { 
+alert( 'квадрат в круге' ); 
+} else { 
+alert( 'пересечение' ); 
+} 
+} 
+} 
+function drawpoint1() { 
+x=Number(document.getElementById("x_znach").value); 
+x=240+x*100; 
+var b=Math.sqrt(x); 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'yellow'; 
+ctx.moveTo(240-b/2, 160-b/2); 
+ctx.lineTo(240+b/2, 160-b/2); 
+ctx.lineTo(240+b/2, 160+b/2); 
+ctx.lineTo(240-b/2, 160+b/2); 
+ctx.closePath(); 
+ctx.stroke(); 
+} 
+function drawpoint2() { 
+y=Number(document.getElementById("y_znach").value); 
+y=160+y*100; 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.strokeStyle = 'blue'; 
+ctx.arc(240, 160, Math.sqrt(y/Math.PI), 0 ,2 * Math.PI) 
+ctx.stroke(); 
+} 
+</script> 
+</head> 
+<body> 
+площадь сквеа=<input type="text" value="0" id="x_znach"> 
+площадь серкл=<input type="text" value="0" id="y_znach"> 
+<a href="#" onclick="clean()" class="button purple">очистить</a> 
+<a href="#" onclick="er1()" class="button purple">кнопка</a> 
+
+<canvas width='480' height='320' id='example'>Обновите браузер</canvas> 
+<br> 
+</body> 
 </html>
