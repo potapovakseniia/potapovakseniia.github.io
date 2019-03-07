@@ -1,179 +1,170 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>js418</title>
-</head>
-<body>
-&lt;!doctype html&gt; <br>
-&lt;html&gt; <br>
-&lt;head&gt; <br>
-&lt;title&gt;canvasExample&lt;/title&gt; <br>
-&lt;meta charset='utf-8' /&gt; <br>
-&lt;style&gt; <br>
-a.button.purple { <br>
-background: #e8c4e4; <br>
-background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0)); <br>
-background: -moz-linear-gradient(#e8c4e4, #d698d0); <br>
-background: linear-gradient(#e8c4e4, #d698d0); <br>
-border: solid 1px #da9fd4; <br>
-border-bottom: solid 3px #946890; <br>
-box-shadow: inset 0 0 0 1px #f2dcef; <br>
-color: #7b5777; <br>
-text-shadow: 0 1px 0 #eacae6; } <br>
-a.button.purple:hover { <br>
-background: #daa2d4; <br>
-background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); <br>
-background: -moz-linear-gradient(#daa2d4, #e0b1db); <br>
-background: linear-gradient(#daa2d4, #e0b1db); <br>
-border: solid 1px #ca91c4; <br>
-border-bottom: solid 3px #946890; <br>
-box-shadow: inset 0 0 0 1px #e9c7e6; } <br>
-a.button.purple:active { <br>
-background: #d49ace; <br>
-background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); <br>
-background: -moz-linear-gradient(#d49ace, #cc94c6); <br>
-background: linear-gradient(#d49ace, #cc94c6); <br>
-border: solid 1px #8e678a; <br>
-box-shadow: inset 0 10px 15px 0 #ba87b5; } <br>
-&lt;/style&gt; <br>
-&lt;script&gt; <br>
-var x1 <br>
-var y1 <br>
-var x2 <br>
-var y2 <br>
-var x3 <br>
-var y3 <br>
-var x4 <br>
-var y4 <br>
-function clean(){ <br>
-var canvas = document.getElementById('example'); <br>
-var ctx = canvas.getContext('2d'); <br>
-ctx.fillStyle = "white"; <br>
-ctx.fillRect(0, 0, 480, 320); <br>
-ctx.closePath(); <br>
-} <br>
-function er1(){ <br>
-clean(); <br>
-var canvas = document.getElementById('example'); <br>
-var ctx = canvas.getContext('2d'); <br>
-ctx.beginPath(); <br>
-ctx.moveTo(240, 320); <br>
-ctx.lineTo(240, 0); <br>
-ctx.moveTo(0, 160); <br>
-ctx.lineTo(480, 160); <br>
-ctx.closePath(); <br>
-ctx.stroke(); <br>
-drawpoint1(); <br>
-drawpoint2(); <br>
-drawpoint3(); <br>
-} <br>
-function drawpoint1() { <br>
-x1=Number(document.getElementById("x1_znach").value); <br>
-x1=240+x1*10; <br>
-y1=Number(document.getElementById("y1_znach").value); <br>
-y1=160-y1*10; <br>
-x2=Number(document.getElementById("x2_znach").value); <br>
-x2=240+x2*10; <br>
-y2=Number(document.getElementById("y2_znach").value); <br>
-y2=160-y2*10; <br>
-var canvas = document.getElementById('example'); <br>
-var ctx = canvas.getContext('2d'); <br>
-ctx.beginPath(); <br>
-ctx.moveTo(x1, y1); <br>
-ctx.lineTo(x1, y2); <br>
-ctx.lineTo(x2, y2); <br>
-ctx.lineTo(x2, y1); <br>
-ctx.closePath(); <br>
-ctx.stroke(); <br>
-} <br>
-function drawpoint2() { <br>
-x3=Number(document.getElementById("x3_znach").value); <br>
-x3=240+x3*10; <br>
-y3=Number(document.getElementById("y3_znach").value); <br>
-y3=160-y3*10; <br>
-x4=Number(document.getElementById("x4_znach").value); <br>
-x4=240+x4*10; <br>
-y4=Number(document.getElementById("y4_znach").value); <br>
-y4=160-y4*10; <br>
-var canvas = document.getElementById('example'); <br>
-var ctx = canvas.getContext('2d'); <br>
-ctx.beginPath(); <br>
-ctx.moveTo(x3, y3); <br>
-ctx.lineTo(x3, y4); <br>
-ctx.lineTo(x4, y4); <br>
-ctx.lineTo(x4, y3); <br>
-ctx.closePath(); <br>
-ctx.stroke(); <br>
-} <br>
-function drawpoint3() { <br>
-x1=Number(document.getElementById("x1_znach").value); <br>
-y1=Number(document.getElementById("y1_znach").value); <br>
-x2=Number(document.getElementById("x2_znach").value); <br>
-y2=Number(document.getElementById("y2_znach").value); <br>
-x3=Number(document.getElementById("x3_znach").value); <br>
-y3=Number(document.getElementById("y3_znach").value); <br>
-x4=Number(document.getElementById("x4_znach").value); <br>
-y4=Number(document.getElementById("y4_znach").value); <br>
-var canvas = document.getElementById('example'); <br>
-var ctx = canvas.getContext('2d'); <br>
-if ( x1&lt;x3 ) { <br>
-xmin = x1; <br>
-} else { <br>
-xmin = x3 }; <br>
-if ( y1&lt;y3 ) { <br>
-ymin = y1; <br>
-} else { <br>
-ymin = y3 }; <br>
-if ( x2&lt;x4 ) { <br>
-xmax = x4; <br>
-} else { <br>
-xmax = x2 }; <br>
-if ( y2&lt;y4 ) { <br>
-ymax = y4; <br>
-} else { <br>
-ymax = y2 }; <br>
-xmin=240+xmin*10; <br>
-ymin=160-ymin*10; <br>
-xmax=240+xmax*10; <br>
-ymax=160-ymax*10; <br>
-ctx.beginPath(); <br>
-ctx.moveTo(xmin, ymin); <br>
-ctx.lineTo(xmin, ymax); <br>
-ctx.lineTo(xmax, ymax); <br>
-ctx.lineTo(xmax, ymin); <br>
-ctx.closePath(); <br>
-ctx.stroke(); <br>
-} <br>
-&lt;/script&gt; <br>
-&lt;/head&gt; <br>
-&lt;body&gt; <br>
-&#1083;&#1077;&#1074;&#1099;&#1081; &#1085;&#1080;&#1078;&#1085;&#1080;&#1081; 1: <br>
-x1=&lt;input type="text" value="1" id="x1_znach"&gt; <br>
-y1=&lt;input type="text" value="2" id="y1_znach"&gt; <br>
-&lt;br&gt; <br>
-&lt;br&gt; <br>
-&#1087;&#1088;&#1072;&#1074;&#1099;&#1081; &#1074;&#1077;&#1088;&#1093;&#1085;&#1080;&#1081; 1: <br>
-x2=&lt;input type="text" value="3" id="x2_znach"&gt; <br>
-y2=&lt;input type="text" value="4" id="y2_znach"&gt; <br>
-&lt;br&gt; <br>
-&lt;br&gt; <br>
-&#1083;&#1077;&#1074;&#1099;&#1081; &#1085;&#1080;&#1078;&#1085;&#1080;&#1081; 2: <br>
-x3=&lt;input type="text" value="5" id="x3_znach"&gt; <br>
-y3=&lt;input<br>
-&nbsp;<br>
-type="text" value="6" id="y3_znach"&gt; <br>
-&lt;br&gt; <br>
-&lt;br&gt; <br>
-&#1087;&#1088;&#1072;&#1074;&#1099;&#1081; &#1074;&#1077;&#1088;&#1093;&#1085;&#1080;&#1081; 2: <br>
-x4=&lt;input type="text" value="7" id="x4_znach"&gt; <br>
-y4=&lt;input type="text" value="8" id="y4_znach"&gt; <br>
-&lt;a href="#" onclick="clean()" class="button purple"&gt;&#1086;&#1095;&#1080;&#1089;&#1090;&#1080;&#1090;&#1100;&lt;/a&gt; <br>
-&lt;a href="#" onclick="er1()" class="button purple"&gt;&#1082;&#1085;&#1086;&#1087;&#1091;&#1096;&#1082;&#1072;&lt;/a&gt; <br>
-<br>
-&lt;canvas width='480' height='320' id='example'&gt;&#1054;&#1073;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1073;&#1088;&#1072;&#1091;&#1079;&#1077;&#1088;&lt;/canvas&gt; <br>
-&lt;br&gt; <br>
-&lt;/body&gt; <br>
-&lt;/html&gt;
-</body>
+<!doctype html> 
+<html> 
+<head> 
+<title>canvasExample</title> 
+<meta charset='utf-8' /> 
+<style> 
+a.button.purple { 
+background: #e8c4e4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e8c4e4), to(#d698d0)); 
+background: -moz-linear-gradient(#e8c4e4, #d698d0); 
+background: linear-gradient(#e8c4e4, #d698d0); 
+border: solid 1px #da9fd4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #f2dcef; 
+color: #7b5777; 
+text-shadow: 0 1px 0 #eacae6; } 
+a.button.purple:hover { 
+background: #daa2d4; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#daa2d4), to(#e0b1db)); 
+background: -moz-linear-gradient(#daa2d4, #e0b1db); 
+background: linear-gradient(#daa2d4, #e0b1db); 
+border: solid 1px #ca91c4; 
+border-bottom: solid 3px #946890; 
+box-shadow: inset 0 0 0 1px #e9c7e6; } 
+a.button.purple:active { 
+background: #d49ace; 
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d49ace), to(#cc94c6)); 
+background: -moz-linear-gradient(#d49ace, #cc94c6); 
+background: linear-gradient(#d49ace, #cc94c6); 
+border: solid 1px #8e678a; 
+box-shadow: inset 0 10px 15px 0 #ba87b5; } 
+</style> 
+<script> 
+var x1 
+var y1 
+var x2 
+var y2 
+var x3 
+var y3 
+var x4 
+var y4 
+function clean(){ 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.fillStyle = "white"; 
+ctx.fillRect(0, 0, 480, 320); 
+ctx.closePath(); 
+} 
+function er1(){ 
+clean(); 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.moveTo(240, 320); 
+ctx.lineTo(240, 0); 
+ctx.moveTo(0, 160); 
+ctx.lineTo(480, 160); 
+ctx.closePath(); 
+ctx.stroke(); 
+drawpoint1(); 
+drawpoint2(); 
+drawpoint3(); 
+} 
+function drawpoint1() { 
+x1=Number(document.getElementById("x1_znach").value); 
+x1=240+x1*10; 
+y1=Number(document.getElementById("y1_znach").value); 
+y1=160-y1*10; 
+x2=Number(document.getElementById("x2_znach").value); 
+x2=240+x2*10; 
+y2=Number(document.getElementById("y2_znach").value); 
+y2=160-y2*10; 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.moveTo(x1, y1); 
+ctx.lineTo(x1, y2); 
+ctx.lineTo(x2, y2); 
+ctx.lineTo(x2, y1); 
+ctx.closePath(); 
+ctx.stroke(); 
+} 
+function drawpoint2() { 
+x3=Number(document.getElementById("x3_znach").value); 
+x3=240+x3*10; 
+y3=Number(document.getElementById("y3_znach").value); 
+y3=160-y3*10; 
+x4=Number(document.getElementById("x4_znach").value); 
+x4=240+x4*10; 
+y4=Number(document.getElementById("y4_znach").value); 
+y4=160-y4*10; 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+ctx.beginPath(); 
+ctx.moveTo(x3, y3); 
+ctx.lineTo(x3, y4); 
+ctx.lineTo(x4, y4); 
+ctx.lineTo(x4, y3); 
+ctx.closePath(); 
+ctx.stroke(); 
+} 
+function drawpoint3() { 
+x1=Number(document.getElementById("x1_znach").value); 
+y1=Number(document.getElementById("y1_znach").value); 
+x2=Number(document.getElementById("x2_znach").value); 
+y2=Number(document.getElementById("y2_znach").value); 
+x3=Number(document.getElementById("x3_znach").value); 
+y3=Number(document.getElementById("y3_znach").value); 
+x4=Number(document.getElementById("x4_znach").value); 
+y4=Number(document.getElementById("y4_znach").value); 
+var canvas = document.getElementById('example'); 
+var ctx = canvas.getContext('2d'); 
+if ( x1<x3 ) { 
+xmin = x1; 
+} else { 
+xmin = x3 }; 
+if ( y1<y3 ) { 
+ymin = y1; 
+} else { 
+ymin = y3 }; 
+if ( x2<x4 ) { 
+xmax = x4; 
+} else { 
+xmax = x2 }; 
+if ( y2<y4 ) { 
+ymax = y4; 
+} else { 
+ymax = y2 }; 
+xmin=240+xmin*10; 
+ymin=160-ymin*10; 
+xmax=240+xmax*10; 
+ymax=160-ymax*10; 
+ctx.beginPath(); 
+ctx.moveTo(xmin, ymin); 
+ctx.lineTo(xmin, ymax); 
+ctx.lineTo(xmax, ymax); 
+ctx.lineTo(xmax, ymin); 
+ctx.closePath(); 
+ctx.stroke(); 
+} 
+</script> 
+</head> 
+<body> 
+левый нижний 1: 
+x1=<input type="text" value="1" id="x1_znach"> 
+y1=<input type="text" value="2" id="y1_znach"> 
+<br> 
+<br> 
+правый верхний 1: 
+x2=<input type="text" value="3" id="x2_znach"> 
+y2=<input type="text" value="4" id="y2_znach"> 
+<br> 
+<br> 
+левый нижний 2: 
+x3=<input type="text" value="5" id="x3_znach"> 
+y3=<input
+ 
+type="text" value="6" id="y3_znach"> 
+<br> 
+<br> 
+правый верхний 2: 
+x4=<input type="text" value="7" id="x4_znach"> 
+y4=<input type="text" value="8" id="y4_znach"> 
+<a href="#" onclick="clean()" class="button purple">очистить</a> 
+<a href="#" onclick="er1()" class="button purple">кнопушка</a> 
+
+<canvas width='480' height='320' id='example'>Обновите браузер</canvas> 
+<br> 
+</body> 
 </html>
