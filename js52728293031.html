@@ -1,121 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-  <title>js52728293031</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function func1() {
+      a = Number(document.getElementById("a_znach").value);
+      b = Number(document.getElementById("b_znach").value);
+      var s = 0;
+      var i = a;
+      while (i < b+1) {
+        s = s + i;
+        i++;
+      }
+      document.getElementById("otvet1").innerHTML = s;
+    }
+    function func2() {
+      a = Number(document.getElementById("a2_znach").value);
+      b = Number(document.getElementById("b2_znach").value);
+      var s = 1;
+      var i = a;
+      while (i < b+1) {
+        s = s * i;
+        i++;
+      }
+      document.getElementById("otvet2").innerHTML = s;
+    }
+    function func3() {
+      a = Number(document.getElementById("a3_znach").value);
+      b = Number(document.getElementById("b3_znach").value);
+      var s = 0;
+      var i = a;
+      for (i = a; i < b+1; i++) {
+        s = s + i;
+      }
+      document.getElementById("otvet3").innerHTML = s / (b-a+1);
+    }
+     function func4() {
+      a = Number(document.getElementById("a4_znach").value);
+      b = Number(document.getElementById("b4_znach").value);
+      var s = 0;
+      var i = a;
+      while (i < b+1) {
+        s = s + i*i;
+        i++;
+      }
+      document.getElementById("otvet4").innerHTML = s;
+    }
+    function func5() {
+      n = Number(document.getElementById("n_znach").value);
+      var s = 0;
+      var i = n;
+      var r ;
+      while (i < 2*n+1) {
+        r = i * i;
+        s = s + r;
+        i++;
+      }
+      document.getElementById("otvet5").innerHTML = s;
+    }
+  </script>
 </head>
+
 <body>
-&lt;html&gt;<br>
+
+
+  <h1>5.27г</h1> a=
+  <input type="text" value="0" id="a_znach">
+  b=<input type="text" value="0" id="b_znach">
+  <a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra">ryjgrf</a>
+  <div id="otvet1"></div>
 <br>
-&lt;head&gt;<br>
-&nbsp; &lt;link rel="stylesheet" href="style.css"&gt;<br>
-&nbsp; &lt;script&gt;<br>
-&nbsp;&nbsp;&nbsp; function func1() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = Number(document.getElementById("a_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = Number(document.getElementById("b_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var s = 0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var i = a;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (i &lt; b+1) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = s + i;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("otvet1").innerHTML = s;<br>
-&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; function func2() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = Number(document.getElementById("a2_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = Number(document.getElementById("b2_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var s = 1;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var i = a;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (i &lt; b+1) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = s * i;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("otvet2").innerHTML = s;<br>
-&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; function func3() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = Number(document.getElementById("a3_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = Number(document.getElementById("b3_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var s = 0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var i = a;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for (i = a; i &lt; b+1; i++) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = s + i;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("otvet3").innerHTML = s / (b-a+1);<br>
-&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp; function func4() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a = Number(document.getElementById("a4_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b = Number(document.getElementById("b4_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var s = 0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var i = a;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (i &lt; b+1) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = s + i*i;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("otvet4").innerHTML = s;<br>
-&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; function func5() {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = Number(document.getElementById("n_znach").value);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var s = 0;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var i = n;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var r ;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (i &lt; 2*n+1) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; r = i * i;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s = s + r;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i++;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.getElementById("otvet5").innerHTML = s;<br>
-&nbsp;&nbsp;&nbsp; }<br>
-&nbsp; &lt;/script&gt;<br>
-&lt;/head&gt;<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.28г</h1> 
+    a=<input type="text" value="0" id="a2_znach">
+    b=<input type="text" value="0" id="b2_znach">
+  <a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra">ryjgrf</a>
+  <div id="otvet2"></div>
 <br>
-&lt;body&gt;<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.29г</h1> 
+    a=<input type="text" value="0" id="a3_znach">
+    b=<input type="text" value="0" id="b3_znach">
+  <a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra">ryjgrf</a>
+  <div id="otvet3"></div>
 <br>
+  <br>
+  <br>
+  <br>
+  <h1>5.30г</h1> 
+    a=<input type="text" value="0" id="a4_znach">
+    b=<input type="text" value="0" id="b4_znach">
+  <a href="#" onclick="func4()" class="button green text-blanco text-shadow-negra">ryjgrf</a>
+  <div id="otvet4"></div>
 <br>
-&nbsp; &lt;h1&gt;5.27&#1075;&lt;/h1&gt; a=<br>
-&nbsp; &lt;input type="text" value="0" id="a_znach"&gt;<br>
-&nbsp; b=&lt;input type="text" value="0" id="b_znach"&gt;<br>
-&nbsp; &lt;a href="#" onclick="func1()" class="button red text-blanco text-shadow-negra"&gt;ryjgrf&lt;/a&gt;<br>
-&nbsp; &lt;div id="otvet1"&gt;&lt;/div&gt;<br>
-&lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;h1&gt;5.28&#1075;&lt;/h1&gt; <br>
-&nbsp;&nbsp;&nbsp; a=&lt;input type="text" value="0" id="a2_znach"&gt;<br>
-&nbsp;&nbsp;&nbsp; b=&lt;input type="text" value="0" id="b2_znach"&gt;<br>
-&nbsp; &lt;a href="#" onclick="func2()" class="button yellow text-blanco text-shadow-negra"&gt;ryjgrf&lt;/a&gt;<br>
-&nbsp; &lt;div id="otvet2"&gt;&lt;/div&gt;<br>
-&lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;h1&gt;5.29&#1075;&lt;/h1&gt; <br>
-&nbsp;&nbsp;&nbsp; a=&lt;input type="text" value="0" id="a3_znach"&gt;<br>
-&nbsp;&nbsp;&nbsp; b=&lt;input type="text" value="0" id="b3_znach"&gt;<br>
-&nbsp; &lt;a href="#" onclick="func3()" class="button green text-blanco text-shadow-negra"&gt;ryjgrf&lt;/a&gt;<br>
-&nbsp; &lt;div id="otvet3"&gt;&lt;/div&gt;<br>
-&lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;h1&gt;5.30&#1075;&lt;/h1&gt; <br>
-&nbsp;&nbsp;&nbsp; a=&lt;input type="text" value="0" id="a4_znach"&gt;<br>
-&nbsp;&nbsp;&nbsp; b=&lt;input type="text" value="0" id="b4_znach"&gt;<br>
-&nbsp; &lt;a href="#" onclick="func4()" class="button green text-blanco text-shadow-negra"&gt;ryjgrf&lt;/a&gt;<br>
-&nbsp; &lt;div id="otvet4"&gt;&lt;/div&gt;<br>
-&lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;h1&gt;5.31&#1075;&lt;/h1&gt; <br>
-&nbsp;&nbsp;&nbsp; n=&lt;input type="text" value="0" id="n_znach"&gt;<br>
-&nbsp;&nbsp; &lt;a href="#" onclick="func5()" class="button yellow text-blanco text-shadow-negra"&gt;ryjgrf&lt;/a&gt;<br>
-&nbsp; &lt;div id="otvet5"&gt;&lt;/div&gt;<br>
-&lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&nbsp; &lt;br&gt;<br>
-&lt;/body&gt;<br>
-&lt;/html&gt;<br>
+  <br>
+  <br>
+  <br>
+  <h1>5.31г</h1> 
+    n=<input type="text" value="0" id="n_znach">
+   <a href="#" onclick="func5()" class="button yellow text-blanco text-shadow-negra">ryjgrf</a>
+  <div id="otvet5"></div>
+<br>
+  <br>
+  <br>
+  <br>
 </body>
 </html>
+
